@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello World"
+    pass
 
 # "magic code" -- boilerplate
 if __name__ == '__main__':

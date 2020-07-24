@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template('index.template.html')
+    pass
 
 @app.route('/gallery')
 def gallery():
-    return render_template('gallery.template.html')
+    pass
 
 # "magic code" -- boilerplate
 if __name__ == '__main__':

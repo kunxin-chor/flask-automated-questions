@@ -3,21 +3,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello():
-    return "hi everybody!"
 
-@app.route('/about')
-def about():
-    return "i am very smart"
-
-@app.route('/double/<number>')
-def double(number):
-    return str(int(number)*2)
-
-@app.route('/add/<n1>/<n2>')
-def add(n1,n2):
-    return str(int(n1)+int(n2))
 
 # "magic code" -- boilerplate
 if __name__ == '__main__':
