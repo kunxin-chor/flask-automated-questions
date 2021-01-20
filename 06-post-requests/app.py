@@ -10,21 +10,11 @@ def hello():
 @app.route('/', methods=['POST'])
 def processHello():
     # complete this route here
-    first_name = request.form["first-name"]
-    last_name = request.form["last-name"]
-    return render_template('process-hello.template.html', fn=first_name, ln=last_name)
+    pass
 
 @app.route('/calculate')
 def calculate():
     return render_template('calculate.template.html')
-
-@app.route('/calculate', methods=['POST'])
-def processCalculate():
-    number1 = request.form['number1']
-    number2 = request.form['number2']
-    total = int(number1) + int(number2)
-    return render_template('process-calculate.template.html', answer=total)
-
 
 # "magic code" -- boilerplate
 if __name__ == '__main__':
